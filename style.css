@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #2a2a35;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	
+	background-color: #555;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #555;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(129, 129, 129);
+}
+
+section.main {
+    padding: 12rem 0;
+}
+
+.container {
+   display: flex;
+   flex-direction: column; 
+   max-width: 800px;
+   width: 100%;
+   height: 500px;
+   margin: auto;
+   background-color: #0b0d19;
+   border: 1px solid gray;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 15px;
+}
+
+.menu {
+    background-color: #272629;
+    display: flex;
+    position: relative;
+    height: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.buttons button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 0px solid transparent;
+    cursor: pointer;
+}
+
+.red {
+    background-color: #F5544D;
+}
+
+.yellow {
+    background-color: #FABD2F;
+}
+
+.green {
+    background-color: #47D043;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1, .message a h1 {
+    color: #9c9c9c; /* #9c9c9c */
+    font-size: 1.7rem;
+}
+
+.title h1 svg, .message a h1 svg {
+    margin-right: 5px;
+}
+
+.message {
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 1.6rem;
+    color: rgb(238, 238, 238);
+    font-weight: 700;
+}
+
+.message a h1 {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.command {
+    color: #66C2CD;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.cmd-msg {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.path {
+    color: #F7FCA0;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.path p span {
+    color: #6A77D2;
+}
+
+.path p span:last-child{
+    color: #9CEAF3;
+}
+
+.type, .type2, .type3 {
+    margin-left: 15px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.type svg, .type2 svg {
+    color: #5AD786;
+}
+
+.type3 svg {
+    color: #F78F85;
+}
+
+.type input {
+    background: none;
+    box-shadow: 0 0 0 transparent;
+    outline: none;
+    border: 0;
+    color: rgb(238, 238, 238);
+    font-size: 1.6rem;
+}
+
+.error {
+    color: #F78F85;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.success {
+    margin-top: 0;
+    color: #5AD786;
+    margin-left: 0;
+}
+
+@media(max-width: 392px){
+    .title h1 {
+        font-size: 1.4rem;
+    }
+}

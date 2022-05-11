@@ -1,0 +1,10 @@
+{
+  "name": "Ibrahim_sifat_terminal",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "Ibrahim Sifat <ibsifat900@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.0"
+  }
+}
